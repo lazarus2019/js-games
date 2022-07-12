@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading & Intersection Observer</title>
+    <style>
+        .element {
+            width: 100%;
+            height: 60vh;
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            margin: 10% 0;
+        }
+
+        img {
+            margin: 0 10px;
+            max-width: calc((100% - 80px) / 4 );
+            height: 200px;
+            background-color: azure;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="element" style="background-color: cadetblue;">Height: 60vh</div>
+    <div class="element" style="background-color:chocolate">Height: 60vh</div>
+
+    <div class="img-container">
+        <img src="https://i.picsum.photos/id/497/1/1.jpg?hmac=_qN3drEkIgveF7yCZ_rgK2bDiKfgv_gpxtRD2_rj1bY" alt=""
+            lazy-src="https://picsum.photos/300/200">
+        <img src="https://i.picsum.photos/id/497/1/1.jpg?hmac=_qN3drEkIgveF7yCZ_rgK2bDiKfgv_gpxtRD2_rj1bY" alt=""
+            lazy-src="https://picsum.photos/300/200">
+        <img src="https://i.picsum.photos/id/497/1/1.jpg?hmac=_qN3drEkIgveF7yCZ_rgK2bDiKfgv_gpxtRD2_rj1bY" alt=""
+            lazy-src="https://picsum.photos/300/200">
+        <img src="https://i.picsum.photos/id/497/1/1.jpg?hmac=_qN3drEkIgveF7yCZ_rgK2bDiKfgv_gpxtRD2_rj1bY" alt=""
+            lazy-src="https://picsum.photos/300/200">
+    </div>
+    <div class="element" style="background-color:coral">Height: 60vh</div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
