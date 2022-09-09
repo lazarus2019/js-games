@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Right Click Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Import line awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <ul class="menu">
+          <li class="menu-item">
+            <i class="las la-eye"></i>
+            <span>Preview</span>
+          </li>
+          <li class="menu-item share menu-dropdown">
+            <div>
+              <i class="las la-share"></i>
+              <span>Share</span>
+            </div>
+            <i class="las la-angle-right"></i>
+            <div class="menu-share menu-dropdown-container show">
+              <ul class="menu">
+                <li class="menu-item">
+                    <i class="lab la-twitter"></i>
+                  <span>Twitter</span>
+                </li>
+                <li class="menu-item">
+                    <i class="lab la-facebook-f"></i>
+                  <span>Facebook</span>
+                </li>
+                <li class="menu-item">
+                    <i class="lab la-instagram"></i>
+                  <span>Instagram</span>
+                </li>
+                <li class="menu-item">
+                    <i class="lab la-linkedin-in"></i>
+                  <span>Linked</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-item">
+            <i class="las la-link"></i>
+            <span>Get Link</span>
+          </li>
+          <li class="menu-item">
+            <i class="las la-edit"></i>
+            <span>Rename</span>
+          </li>
+          <li class="menu-item">
+            <i class="las la-trash"></i>
+            <span>Delete</span>
+          </li>
+        </ul>
+        <div class="setting">
+          <li class="menu-item">
+            <i class="las la-cog"></i>
+            <span>Setting</span>
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
